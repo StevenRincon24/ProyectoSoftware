@@ -50,6 +50,10 @@ Usuario = (String) SessionActiva.getAttribute("Usuario");
 		font-size: 3.5rem;
 	}
 }
+
+.nav-item{
+	text-align: center;
+}
 </style>
 
 
@@ -72,8 +76,8 @@ Usuario = (String) SessionActiva.getAttribute("Usuario");
 					<ul class="navbar-nav me-auto mb-2 mb-md-0">
 						<li class="nav-item"><a class="nav-link" aria-current="page"
 							href="../Administrador/PaginaPrincipal.jsp">Inicio</a></li>
-						<li class="nav-item"><a class="nav-link" href="#">Caracteristicas</a>
-						</li>
+						<li class="nav-item"><a class="nav-link" aria-current="page"
+							href="../Administrador/Caracteristicas.jsp">Caracteristica</a></li>
 						<li class="nav-item"><a class="nav-link " href="#">Informe
 								y estadísticas</a></li>
 
@@ -84,16 +88,15 @@ Usuario = (String) SessionActiva.getAttribute("Usuario");
 							<%
 							Daos_Usuario daosUsuario = new Daos_Usuario();
 							Nombres = daosUsuario.nombre_Usuario(Usuario);
-							%> <a class="nav-link dropdown-toggle"
-							href="#" id="dropdown03" data-bs-toggle="dropdown"
-							aria-expanded="false"><%=Nombres%></a>
-							<ul class="dropdown-menu bg-dark">
-								<center>
-									<li class="nav-item"><a class="nav-link" href="#">Mi
-											Perfil</a></li>
-									<li class="nav-item"><a class="nav-link"
-										href="../login/CerrarSession.jsp">Cerrar Sesión</a></li>
-								</center>
+							%> <a class="nav-link dropdown-toggle" href="#" id="dropdown03"
+							data-bs-toggle="dropdown" aria-expanded="false"><%=Nombres%></a>
+							<ul class="dropdown-menu bg-dark" >
+
+								<li class="nav-item"><a class="nav-link" href="#">Mi
+										Perfil</a></li>
+								<li class="nav-item"><a class="nav-link"
+									href="../login/CerrarSession.jsp">Cerrar Sesión</a></li>
+
 							</ul>
 						</li>
 

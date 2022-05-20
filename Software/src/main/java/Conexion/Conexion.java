@@ -20,7 +20,6 @@ public class Conexion {
 		try {
 			Class.forName(CONTROLADOR);
 			con = DriverManager.getConnection(URL, USUARIO, CLAVE);
-			System.out.println("Conexión OK");
 			stmt = con.createStatement();
 			
 		} catch (ClassNotFoundException e) {
