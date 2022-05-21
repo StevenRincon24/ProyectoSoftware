@@ -2,6 +2,25 @@
     pageEncoding="UTF-8"%>
 <!DOCTYPE html>
 <html>
+<%!String Usuario = "";
+	String Nombres = "";
+	String Rol = "";%>
+<%
+HttpSession SessionActiva = request.getSession();
+
+if (SessionActiva.getAttribute("Usuario") == null) {
+%>
+<script type="text/javascript">
+	alert("Por Favor Iniciar Sesión");
+	location.href = "../index.jsp";
+</script>
+
+<%
+} else {
+
+Usuario = (String) SessionActiva.getAttribute("Usuario");
+}
+%>
 <head>
 	<meta charset="UTF-8">
 	<title>Informes y Estadisticas</title>
@@ -36,7 +55,6 @@
       	font-family: "Verdana", sans-serif;
       	font-size: 30px;
     	}
-
     </style>
 <body>
 
@@ -77,7 +95,7 @@
 			</div>
 		  </div>
 		  
-		<!-- 
+		 
 		 
 		<div class="containerEstadistica">
 		<div class="container">
@@ -87,7 +105,7 @@
       		</div>
     	</div>
     	</div>
-    	-->
+    	
     	
     	<div class="containerInforme">
 			<div class="row justify-content-center" style="margin-top: 30px">

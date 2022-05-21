@@ -1,6 +1,4 @@
-<<<<<<< HEAD
-<%@ page language="java" contentType="text/html; charset=ISO-8859-1"
-	pageEncoding="ISO-8859-1"%>
+<%@page contentType="text/html" pageEncoding="UTF-8"%>
 <!DOCTYPE html>
 <html>
 <%!String Usuario = "";
@@ -12,7 +10,7 @@ HttpSession SessionActiva = request.getSession();
 if (SessionActiva.getAttribute("Usuario") == null) {
 %>
 <script type="text/javascript">
-	alert("Por Favor Iniciar Sesión");
+	alert("Por Favor Iniciar Sesiï¿½n");
 	location.href = "../index.jsp";
 </script>
 
@@ -24,7 +22,7 @@ Usuario = (String) SessionActiva.getAttribute("Usuario");
 %>
 <head>
 <meta charset="ISO-8859-1">
-<title>Característica</title>
+<title>CaracterÃ­stica</title>
 <!-- Bootstrap core CSS -->
 <link
 	href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css"
@@ -48,7 +46,7 @@ body {
 					<ol class="breadcrumb" style="margin-top: 50px">
 						<li class="breadcrumb-item"><a
 							href="../Administrador/PaginaPrincipal.jsp">Inicio</a></li>
-						<li class="breadcrumb-item active" aria-current="page">Característica</li>
+						<li class="breadcrumb-item active" aria-current="page">CaracterÃ­stica</li>
 					</ol>
 				</nav>
 
@@ -56,22 +54,22 @@ body {
 					<div class="container">
 						<div class="row justify-content-center">
 							<div class="col-4">
-								<label for="inputCaracteristica" class="col-form-label">Característica</label>
+								<label for="inputCaracteristica" class="col-form-label">CaracterÃ­stica</label>
 							</div>
 							<div class="col-4">
 								<select class="form-select" aria-label="Seleccione"
 									required="required">
 									<option selected value="">Seleccione</option>
 									<option value="PermanenciaDesercion">Permanencia y
-										deserción</option>
+										deserciÃ³n</option>
 									<option value="NCalidadEstudiantes">N. Y Calidad de
 										los Estudiantes Admitidos</option>
 									<option value="FormacionIntegral">P. Actividades de
-										Formación Integral</option>
+										FormaciÃ³n Integral</option>
 									<option value="ReglamentoEstudiantil">Reglamento
 										Estudiantil</option>
 								</select>
-								<div class="invalid-feedback">¡Debe seleccionar una de las
+								<div class="invalid-feedback">Â¡Debe seleccionar una de las
 									opciones!</div>
 							</div>
 
@@ -81,10 +79,10 @@ body {
 									<div class="input-group mb-3">
 										<select class="form-select" aria-label="Seleccione" required>
 											<option selected value="">Seleccione</option>
-											<option value="1">Académica</option>
-											<option value="2">No académica</option>
+											<option value="1">AcadÃ©mica</option>
+											<option value="2">No acadÃ©mica</option>
 										</select>
-										<div class="invalid-feedback">¡Debe seleccionar una de
+										<div class="invalid-feedback">Â¡Debe seleccionar una de
 											las opciones!</div>
 									</div>
 								</div>
@@ -96,7 +94,7 @@ body {
 											<option value="Periodo1">I Periodo</option>
 											<option value="Periodo2">II Periodo</option>
 										</select>
-										<div class="invalid-feedback">¡Debe seleccionar un
+										<div class="invalid-feedback">Â¡Debe seleccionar un
 											periodo!</div>
 									</div>
 								</div>
@@ -105,9 +103,9 @@ body {
 										de estudiantes</label>
 									<div class="input-group mb-3">
 										<input type="number" class="form-control" type="number"
-											placeholder="Número" aria-label="Numero"
+											placeholder="NÃºmero" aria-label="Numero"
 											aria-describedby="basic-addon1" value="" required>
-										<div class="invalid-feedback">¡Debe escribir la cantidad
+										<div class="invalid-feedback">Â¡Debe escribir la cantidad
 											de estudiantes!</div>
 									</div>
 
@@ -132,18 +130,18 @@ body {
 									</div>
 								</div>
 								<div class="col-4">
-									<label for="inputPeriodo" class="form-label">Número de
+									<label for="inputPeriodo" class="form-label">NÃºmero de
 										matriculados</label>
 									<div class="input-group mb-3">
 										<input type="number" class="form-control" type="number"
-											placeholder="Número" aria-label="Numero"
+											placeholder="NÃºmero" aria-label="Numero"
 											aria-describedby="basic-addon1" value="" required="required">
-										<div class="invalid-feedback">¡Debe escribir la cantidad
+										<div class="invalid-feedback">Â¡Debe escribir la cantidad
 											de estudiantes matriculados!</div>
 									</div>
 								</div>
 								<div class="col-4">
-									<label for="inputAnio" class="form-label">Año</label>
+									<label for="inputAnio" class="form-label">AÃ±o</label>
 									<div class="input-group mb-3">
 										<select class="form-select" aria-label="Seleccione"
 											required="required">
@@ -155,7 +153,7 @@ body {
 											<option value="Anio2018">2018</option>
 											<option value="Anio2017">2017</option>
 										</select>
-										<div class="invalid-feedback">¡Debe escribir una de las
+										<div class="invalid-feedback">Â¡Debe escribir una de las
 											opciones!</div>
 									</div>
 
@@ -192,72 +190,8 @@ body {
 						</div>
 					</div>
 
-				</form>
-			</div>
-		</div>
-	</div>
 
-</body>
-<footer>
-	<img src="../imagenes/footer.png" width="100%">
-</footer>
-<link
-	href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
-	rel="stylesheet"
-	integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
-	crossorigin="anonymous">
-<script src="../js/form-validation.js"></script>
-=======
-<%@ page language="java" contentType="text/html; charset=UTF-8"
-    pageEncoding="UTF-8"%>
-<!DOCTYPE html>
-<html>
-<head>
-	<meta charset="UTF-8">
-	<title>CaracterÃ­stica</title>
-       <!-- Bootstrap core CSS -->
-        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
-        <link href="../Estilos/estilos.css" rel="stylesheet">
-        <link href="../assets/dist/css/bootstrap.rtl.min.css" rel="stylesheet">
-</head>
-
-    <style>
-        body{
-            background-color: #FFE700;
-            background-image: url('../imagenes/fondo.png');
-            background-repeat: no-repeat;
-        }
-
-    </style>
-
-<body>
-	<jsp:include page="../Menu/MenuAdministrador.jsp"/>
-		
-		<div class="container" style="margin-top: 80px">
-		<nav style="--bs-breadcrumb-divider: '>';" aria-label="breadcrumb">
-			<ol class="breadcrumb">
-			    <li class="breadcrumb-item"><a href="../Administrador/PaginaPrincipal.jsp">Inicio</a></li>
-			    <li class="breadcrumb-item active" aria-current="page">CaracterÃ­stica</li>
-			</ol>
-		</nav>
-		</div>
-		
-		<div class="container">
- 		<div class="row justify-content-center">
- 		
-		  <div class="col-4">
-		    <label for="inputCaracteristica" class="col-form-label">CaracterÃ­stica</label>
-		  </div>
-		  <div class="col-4">
-			<select class="form-select" aria-label="Seleccione">
-			  <option selected>Seleccione</option>
-			  <option value="PermanenciaDesercion">Permanencia y deserciÃ³n</option>
-			  <option value="NCalidadEstudiantes">N. Y Calidad de los Estudiantes Admitidos</option>
-			  <option value="FormacionIntegral">P. Actividades de FormaciÃ³n Integral</option>
-			  <option value="ReglamentoEstudiantil">Reglamento Estudiantil</option>
-			</select>
-		  </div>
-		  <!-- 
+ <!-- 
 		  <div class="containerCaracterPage1">
 		  <div class="row justify-content-center" style="margin-top: 30px">
 			  <div class="col-4">
@@ -600,54 +534,19 @@ body {
 		</div>
 			 -->
 		 
-		<div class="row justify-content-center" style="margin-top: 30px">
-			<div class="col-2">
-					<nav aria-label="Page navigation">
-					  <ul class="pagination">
-					    <li class="page-item">
-					      <a class="page-link" href="#" aria-label="Previous">
-					        <span aria-hidden="true">&laquo;</span>
-					      </a>
-					    </li>
-					    <li class="page-item active"><a class="page-link" href="#">1</a></li>
-					    <li class="page-item"><a class="page-link" href="#">2</a></li>
-					    <li class="page-item">
-					      <a class="page-link" href="#" aria-label="Next">
-					        <span aria-hidden="true">&raquo;</span>
-					      </a>
-					    </li>
-					  </ul>
-					</nav>
-			</div>
-		</div>
-		
-		<div class="row justify-content-center" style="margin-top: 10px">
-			<div class="col-0">
-				<div class="d-grid gap-2 d-md-flex justify-content-md-center">
-  					<button class="btn btn-warning" type="button">Enviar</button>
-  					<button class="btn btn-warning" type="button">Cancelar</button>
-				</div>
-			</div>
-		
-		</div>
-		
-		
 
+				</form>
+			</div>
+		</div>
 	</div>
-</div>
-		
-		
-				
-		
-		
-		
-		
-</body>
-  
-<footer>
-        <img src="../imagenes/footer.png" width="100%">
-</footer>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
 
->>>>>>> refs/remotes/origin/master
-</html>
+</body>
+<footer>
+	<img src="../imagenes/footer.png" width="100%">
+</footer>
+<link
+	href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
+	rel="stylesheet"
+	integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
+	crossorigin="anonymous">
+<script src="../js/form-validation.js"></script>

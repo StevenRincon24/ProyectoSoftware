@@ -119,9 +119,9 @@ body {
 						<div class="col-sm-4">
 							<label for="username" class="form-label">Usuario</label>
 							<div class="input-group has-validation">
-								<span class="input-group-text">@</span> <input type="text"
+								 <input type="text"
 									class="form-control" id="username" placeholder="Usuario"
-									required>
+									required><span class="input-group-text">@uptc.edu.co</span>
 								<div class="invalid-feedback">¡Debe asignar un usuario!</div>
 							</div>
 						</div>
