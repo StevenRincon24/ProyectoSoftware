@@ -67,7 +67,7 @@
                                 </div>
                                 <div class="card-body">
                                     <p class="card-text">Diligenciar los respectivos formularios por estadísticas.</p>
-                                    <button type="button" class="btn btn-secondary">Ingresar</button>
+                                    <a href="../Administrador/Caracteristicas.jsp"><button type="button" class="btn btn-secondary">Ingresar</button></a>
                                 </div>
                             </div>
                         </div>
@@ -89,7 +89,7 @@
                                 <small class="text-muted">Administrar usuarios</small>
                                 <div class="card-body">
                                     <p class="card-text">Crear, visualizar, editar y/o eliminar usuarios del sistema</p>
-                                    <button type="button" class="btn btn-secondary">Ingresar</button>
+                                    <a href="../Administrador/CrearUsuario.jsp"><button type="button" class="btn btn-secondary">Ingresar</button></a>
                                 </div>
                             </div>
                         </div>  

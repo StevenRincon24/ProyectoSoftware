@@ -24,9 +24,13 @@ Usuario = (String) SessionActiva.getAttribute("Usuario");
 
 <title>Crear Usuario</title>
 <!-- Bootstrap core CSS -->
-<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" 	crossorigin="anonymous">
+<link
+	href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css"
+	rel="stylesheet">
 <link href="../Estilos/estilos.css" rel="stylesheet">
 <link href="../assets/dist/css/bootstrap.rtl.min.css" rel="stylesheet">
+<link rel="stylesheet"
+	href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.2/font/bootstrap-icons.css">
 </head>
 
 
@@ -42,11 +46,7 @@ body {
 	<jsp:include page="../Menu/MenuAdministrador.jsp" />
 	<div class="album py-lg-5 ">
 		<div class="container">
-
-
-
 			<div class="col-xl-12">
-
 				<nav aria-label="breadcrumb" id="migadepan"
 					style="-bs-breadcrumb-divider: '&gt;';">
 					<ol class="breadcrumb">
@@ -57,9 +57,40 @@ body {
 					</ol>
 				</nav>
 
+				<header class="py-3 mb-4 border-bottom">
+					<div class="container d-flex flex-wrap justify-items-center">
+						<div class="col-12">
+
+							<a><button type="button" class="btn btn-primary"
+									disabled="disabled">
+									<svg xmlns="http://www.w3.org/2000/svg" width="26" height="26"
+										fill="currentColor" class="bi bi-person-plus-fill"
+										viewBox="0 0 16 16">
+  <path
+											d="M1 14s-1 0-1-1 1-4 6-4 6 3 6 4-1 1-1 1H1zm5-6a3 3 0 1 0 0-6 3 3 0 0 0 0 6z" />
+  <path fill-rule="evenodd"
+											d="M13.5 5a.5.5 0 0 1 .5.5V7h1.5a.5.5 0 0 1 0 1H14v1.5a.5.5 0 0 1-1 0V8h-1.5a.5.5 0 0 1 0-1H13V5.5a.5.5 0 0 1 .5-.5z" />
+</svg>
+									Crear usuario
+								</button></a> <a><button type="button" class="btn btn-danger">
+									<svg xmlns="http://www.w3.org/2000/svg" width="26" height="26"
+										fill="currentColor" class="bi bi-person-lines-fill"
+										viewBox="0 0 16 16">
+  <path
+											d="M6 8a3 3 0 1 0 0-6 3 3 0 0 0 0 6zm-5 6s-1 0-1-1 1-4 6-4 6 3 6 4-1 1-1 1H1zM11 3.5a.5.5 0 0 1 .5-.5h4a.5.5 0 0 1 0 1h-4a.5.5 0 0 1-.5-.5zm.5 2.5a.5.5 0 0 0 0 1h4a.5.5 0 0 0 0-1h-4zm2 3a.5.5 0 0 0 0 1h2a.5.5 0 0 0 0-1h-2zm0 3a.5.5 0 0 0 0 1h2a.5.5 0 0 0 0-1h-2z" />
+</svg>
+									Lista de personas
+								</button></a>
+
+
+						</div>
+
+					</div>
+				</header>
 
 				<form class="needs-validation" novalidate>
-					<h4 class="mb-3" id="tituloCrear">Crear Usuario</h4>
+
+
 					<div class="row g-4">
 						<div class="col-sm-4">
 							<label for="firstName" class="form-label">Nombre</label> <input
@@ -74,8 +105,6 @@ body {
 								placeholder="Apellidos" value="" required>
 							<div class="invalid-feedback">¡Debe escribir el apellido!</div>
 						</div>
-
-
 
 						<div class="col-md-4">
 							<label for="state" class="form-label">Rol</label> <select
@@ -113,10 +142,8 @@ body {
 						</div>
 
 						<div class="col-1" id="botones">
-
 							<button type="button" class="btn btn-danger" id="botonCancelar">Cancelar</button>
 						</div>
-
 					</div>
 				</form>
 			</div>

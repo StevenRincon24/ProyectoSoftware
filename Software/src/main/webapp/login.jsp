@@ -14,6 +14,12 @@
 	rel="stylesheet"
 	integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3"
 	crossorigin="anonymous">
+<link rel="stylesheet"
+	href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<link rel="stylesheet"
+	href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+<script
+	src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 
 <style>
 .bd-placeholder-img {
@@ -59,18 +65,51 @@ small {
 			<div class="container">
 				<div id="iniciarSesion" align="center">
 					<form class="row g-3" method="post"
-						action="login/ValidarUsuario.jsp">
-						<div class="col-auto">
-							<label for="exampleInputPassword1" class="form-label">Usuario</label>
-							<input type="text" name="usuario" class="form-control"
-								placeholder="Ingrese su usuario">
+						action="login/ValidarUsuario.jsp" >
+
+
+						<div class="col-sm-4">
+							<label for="username" class="form-label">Usuario</label>
+							<div class="input-group has-validation">
+								<input type="text" class="form-control" id="username"
+									placeholder="Usuario" name="usuario" required><span
+									class="input-group-text">@uptc.edu.co</span>
+								<div class="invalid-feedback">¡Debe asignar un usuario!</div>
+							</div>
 						</div>
 
 						<div class="col-auto">
 							<label for="exampleInputPassword1" class="form-label">Contraseña</label>
-							<input type="password" name="contrasenhia" class="form-control"
-								id="exampleInputPassword1" placeholder="Ingrese su contraseña">
+
+
+							<div class="input-group">
+								<input ID="txtPassword" type="Password" Class="form-control"
+									name="contrasenhia">
+								<div class="input-group-append">
+									<button id="show_password" class="btn btn-primary"
+										type="button" onclick="mostrarPassword()">
+										<span class="fa fa-eye-slash icon"></span>
+									</button>
+								</div>
+							</div>
+
 						</div>
+
+						<script type="text/javascript">
+							function mostrarPassword() {
+								var cambio = document
+										.getElementById("txtPassword");
+								if (cambio.type == "password") {
+									cambio.type = "text";
+									$('.icon').removeClass('fa fa-eye-slash')
+											.addClass('fa fa-eye');
+								} else {
+									cambio.type = "password";
+									$('.icon').removeClass('fa fa-eye')
+											.addClass('fa fa-eye-slash');
+								}
+							}
+						</script>
 
 						<div class="col-auto" style="margin-top: 50px">
 							<button type="submit" class="btn btn-warning">Iniciar

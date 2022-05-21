@@ -19,7 +19,6 @@ public class Daos_Usuario {
     }
     
     public int rolUsuario(String Usuario, String contrasenhia) throws SQLException{
-        System.out.println("Usuario " + Usuario);
         String consulta = "select nombre_Usuario, idRol_Usuario from usuario where nombre_Usuario= '" +Usuario +"' and contrasenhia_Usuario = '"+contrasenhia+"';";     
         rs = conexion.seleccionarDatos(consulta);
         while (rs.next()){
