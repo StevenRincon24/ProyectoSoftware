@@ -89,8 +89,6 @@ body {
 				</header>
 
 				<form class="needs-validation" novalidate>
-
-
 					<div class="row g-4">
 						<div class="col-sm-4">
 							<label for="firstName" class="form-label">Nombre</label> <input
@@ -119,9 +117,9 @@ body {
 						<div class="col-sm-4">
 							<label for="username" class="form-label">Usuario</label>
 							<div class="input-group has-validation">
-								 <input type="text"
-									class="form-control" id="username" placeholder="Usuario"
-									required><span class="input-group-text">@uptc.edu.co</span>
+								<input type="text" class="form-control" id="username"
+									placeholder="Usuario" value="" required><span
+									class="input-group-text">@uptc.edu.co</span>
 								<div class="invalid-feedback">¡Debe asignar un usuario!</div>
 							</div>
 						</div>
@@ -130,7 +128,7 @@ body {
 							<label for="username" class="form-label">Contraseña</label>
 							<div class="input-group has-validation">
 								<input type="password" class="form-control" id="username"
-									placeholder="Contraseña" required>
+									placeholder="Contraseña" value="" required >
 								<div class="invalid-feedback">¡Debe escribir la
 									contraseña!</div>
 							</div>
@@ -142,7 +140,7 @@ body {
 						</div>
 
 						<div class="col-1" id="botones">
-							<button type="button" class="btn btn-danger" id="botonCancelar">Cancelar</button>
+							<button type="submit" class="btn btn-danger" id="botonCancelar">Cancelar</button>
 						</div>
 					</div>
 				</form>
@@ -165,6 +163,7 @@ body {
 	rel="stylesheet"
 	integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
 	crossorigin="anonymous">
+	<script src="../js/form-validation.js"></script>
 
 
 </html>
