@@ -65,14 +65,14 @@ small {
 			<div class="container">
 				<div id="iniciarSesion" align="center">
 					<form class="row g-3" method="post"
-						action="login/ValidarUsuario.jsp" >
+						action="login/ValidarUsuario.jsp">
 
 
 						<div class="col-sm-4">
 							<label for="username" class="form-label">Usuario</label>
 							<div class="input-group has-validation">
 								<input type="text" class="form-control" id="username"
-									placeholder="Usuario" name="usuario" required><span
+									placeholder="Usuario" name="usuario" value="" required><span
 									class="input-group-text">@uptc.edu.co</span>
 								<div class="invalid-feedback">¡Debe asignar un usuario!</div>
 							</div>
@@ -84,7 +84,7 @@ small {
 
 							<div class="input-group">
 								<input ID="txtPassword" type="Password" Class="form-control"
-									name="contrasenhia">
+									name="contrasenhia" value="" required="required">
 								<div class="input-group-append">
 									<button id="show_password" class="btn btn-primary"
 										type="button" onclick="mostrarPassword()">
@@ -178,6 +178,7 @@ small {
 		src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
 		integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
 		crossorigin="anonymous"></script>
+	<script src="../js/form-validation.js"></script>
 </body>
 
 <footer>
