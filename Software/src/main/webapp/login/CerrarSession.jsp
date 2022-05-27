@@ -1,16 +1,34 @@
-
-
-<%@page contentType="text/html" pageEncoding="UTF-8"%>
+<%@ page language="java" contentType="text/html; charset=ISO-8859-1"
+	pageEncoding="ISO-8859-1"%>
 <!DOCTYPE html>
+
+
 <%
-HttpSession SessionActiva= request.getSession();
+HttpSession SessionActiva = request.getSession();
 
 SessionActiva.invalidate();
 %>
 
-<script type="text/javascript">
-    alert("GRACIAS POR TU VISITA ");
-    
-  location.href="../index.jsp";
-    
-</script>
+
+<html>
+<head>
+<script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+<meta charset="ISO-8859-1">
+<title>Cerrar sesion</title>
+</head>
+<body>
+	<script type="text/javascript">
+		Swal.fire({
+			position : 'top-end',
+			icon : 'success',
+			title : 'Cerrando sesión',
+			showConfirmButton : false,
+			timer : 800,
+
+		}).then(function() {
+			location.href = "../index.jsp";
+		});
+	</script>
+
+</body>
+</html>

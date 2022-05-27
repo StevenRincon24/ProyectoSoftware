@@ -32,7 +32,7 @@ Usuario = (String) SessionActiva.getAttribute("Usuario");
 </head>
 <style>
 body {
-	background-color: #FFE700;
+	
 	background-image: url('../imagenes/fondo.png');
 	background-repeat: no-repeat;
 }

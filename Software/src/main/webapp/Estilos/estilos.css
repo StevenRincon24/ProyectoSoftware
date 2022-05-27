@@ -60,3 +60,8 @@ footer {
 #migadepan{
     margin-top: 35px;
 }
+
+body{
+	min-height: 100%;
+	
+}
